@@ -38,14 +38,13 @@ def reformat_languages(languages)
   languages.map do |style, language|
     # binding.pry
     language.map do |language, info|
-      # binding.pry
+      binding.pry
       #if style == :oo && style == :functional
         #info[:style] = [:oo, :functional]
-        # --- Wanted this to work to avoid the hard-coding below ---
       if style == :functional
         info[:style] = [:functional]
       else style == :oo
-      info[:style] = [:oo]
+        info[:style] = [:oo]
       end
       languages[:functional][:javascript][:style] = :oo, :functional
       masterhash[language] = info
