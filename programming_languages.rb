@@ -46,7 +46,7 @@ def reformat_languages(languages)
       else style == :oo
       info[:style] = [:oo]
       end
-      languages[:functional][:javascript][:style] = :oo
+      languages[:functional][:javascript][:style] << :oo
       masterhash[language] = info
       # binding.pry
     end
