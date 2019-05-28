@@ -52,5 +52,5 @@ def reformat_languages(languages)
   end
   # binding.pry
   return masterhash
-# binding.pry
+binding.pry
 end
