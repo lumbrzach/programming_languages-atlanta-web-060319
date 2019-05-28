@@ -41,6 +41,7 @@ def reformat_languages(languages)
       # binding.pry
       #if style == :oo && style == :functional
         #info[:style] = [:oo, :functional]
+        # --- Wanted this to work to avoid the hard-coding below ---
       if style == :functional
         info[:style] = [:functional]
       else style == :oo
@@ -51,7 +52,7 @@ def reformat_languages(languages)
       # binding.pry
     end
   end
-  binding.pry
+  # binding.pry
   return masterhash
 # binding.pry
 end
