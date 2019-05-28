@@ -49,7 +49,7 @@ def reformat_languages(languages)
       end
       languages[:functional][:javascript][:style] = :oo, :functional
       masterhash[language] = info
-      # binding.pry
+      binding.pry
     end
   end
   # binding.pry
