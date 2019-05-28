@@ -39,12 +39,12 @@ def reformat_languages(languages)
     # binding.pry
     language.map do |language, info|
       # binding.pry
-      if style == :oo && style == :functional
-        info[:style] = [:oo, :functional]
-      elsif style == :oo
-        info[:style] = [:oo]
-      else style == :functional
+      #if style == :oo && style == :functional
+        #info[:style] = [:oo, :functional]
+      if style == :functional
         info[:style] = [:functional]
+      else style == :oo
+      info[:style] = [:oo]
       end
       masterhash[language] = info
       # binding.pry
