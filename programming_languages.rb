@@ -37,7 +37,7 @@ def reformat_languages(languages)
   masterhash = {}
   languages.map do |style, language|
     # binding.pry
-    language.map do |language, info|
+    language.map do |lang, info|
       binding.pry
       #if style == :oo && style == :functional
         #info[:style] = [:oo, :functional]
@@ -47,7 +47,7 @@ def reformat_languages(languages)
         info[:style] = [:oo]
       end
       languages[:functional][:javascript][:style] = :oo, :functional
-      masterhash[language] = info
+      masterhash[lang] = info
       binding.pry
     end
   end
